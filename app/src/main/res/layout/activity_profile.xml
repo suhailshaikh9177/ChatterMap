@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+            app:strokeColor="?attr/colorPrimary"
+            app:strokeWidth="2dp" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/nameValue"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Surname" />
+
+        <TextView
+            android:id="@+id/surnameValue"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number" />
+
+        <TextView
+            android:id="@+id/phoneValue"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/emailValue"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender" />
+
+        <TextView
+            android:id="@+id/genderValue"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth" />
+
+        <TextView
+            android:id="@+id/dobValue"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shareable ID" />
+
+        <TextView
+            android:id="@+id/shareableIdValue"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            style="@style/TextAppearance.Material3.LabelLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Sharing" />
+
+        <TextView
+            android:id="@+id/locationModeValue"
+            style="@style/TextAppearance.Material3.BodyLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shareQrButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share My QR Code"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

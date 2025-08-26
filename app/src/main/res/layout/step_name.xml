@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="?attr/colorSurface">
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/nameIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_person_outline"
+        android:contentDescription="@string/name_icon"
+        android:tint="?attr/colorPrimary"
+        android:layout_marginBottom="32dp" />
+
+    <!-- First Name -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name"
+        app:startIconDrawable="@drawable/ic_person"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:boxStrokeWidth="2dp"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Spacing -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Surname -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/surnameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/surname"
+        app:startIconDrawable="@drawable/ic_person_outline"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:boxStrokeWidth="2dp"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/surnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

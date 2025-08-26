@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LocatorChat</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="username_icon">Username Icon</string>
+    <string name="username">Username</string>
+    <string name="name_icon">Name Icon</string>
+    <string name="first_name">First Name</string>
+    <string name="send_message">Send message</string>
+    <string name="send">Send</string>
+    <string name="type_message">Type a message...</string>
+    <string name="surname">Surname</string>
+    <string name="contact_icon">Contact Icon</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="password_icon">Password Icon</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="select_gender_dob">Select Gender &amp; Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="choose_location_preference">Choose Location Sharing Preference</string>
+    <string name="precise_location">Precise Location</string>
+    <string name="approximate_location">Approximate Location</string>
+    <string name="do_not_share_location">Don\'t Share Location</string>
+</resources>

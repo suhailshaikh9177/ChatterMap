@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/copy_text"
+        android:title="Copy Text" />
+    <item
+        android:id="@+id/translate_message"
+        android:title="Translate" />
+    <item
+        android:id="@+id/show_original"
+        android:title="Show Original"
+        android:visible="false" />
+</menu>

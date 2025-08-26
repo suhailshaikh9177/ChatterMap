@@ -1,0 +1,1 @@
+sha-1 & sha-256 of release keys : keytool -list -v -keystore "C:\Users\suhai\AndroidStudioProjects\locatorchat\key_store\key"

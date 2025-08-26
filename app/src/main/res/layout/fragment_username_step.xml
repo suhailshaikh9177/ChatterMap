@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
+    android:animateLayoutChanges="true">
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/usernameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Username Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preferred Username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:boxBackgroundMode="filled"
+        app:startIconDrawable="@drawable/ic_person">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Progress Indicator -->
+    <ProgressBar
+        android:id="@+id/usernameProgress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="12dp" />
+
+    <!-- Status Text -->
+    <TextView
+        android:id="@+id/usernameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Chat-related rules (no changes)
+    match /chats/{chatId} {
+      allow read, write: if isParticipant(chatId);
+      match /messages/{messageId} {
+        allow read, write: if isParticipant(chatId);
+      }
+    }
+    function isParticipant(chatId) {
+      return request.auth != null &&
+        chatId.matches('(.+)_(.+)') &&
+        (
+          request.auth.uid == chatId.split('_')[0] ||
+          request.auth.uid == chatId.split('_')[1]
+        );
+    }
+
+    // User document rules
+    match /users/{userId} {
+      allow read: if true;
+      allow create: if request.auth.uid == userId;
+      allow update: if (request.auth.uid == userId) ||
+                       (request.auth != null && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['friends']));
+      allow delete: if request.auth.uid == userId;
+
+      // --- CORRECTED RULES FOR FRIEND REQUESTS ---
+      match /friend_requests/{senderId} {
+        // Allow the sender to create the request.
+        allow create: if request.auth.uid == senderId;
+        
+        // Allow only the recipient to read or delete the request.
+        allow read, delete: if request.auth.uid == userId;
+        
+        // Allow EITHER the sender (to resend) OR the recipient (to accept) to update.
+        allow update: if request.auth.uid == senderId || request.auth.uid == userId;
+      }
+    }
+  }
+}

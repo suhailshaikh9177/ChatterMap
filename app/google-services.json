@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "705967065138",
+    "project_id": "locatorchat-v-2",
+    "storage_bucket": "locatorchat-v-2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705967065138:android:a08bbda86751bde2b0542b",
+        "android_client_info": {
+          "package_name": "com.example.locatorchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705967065138-9s2kqci8o5jc5rr46tujdpnkqcqo9osh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.locatorchat",
+            "certificate_hash": "88c7b3c19c1662323356ab2a02273732be384c81"
+          }
+        },
+        {
+          "client_id": "705967065138-tiql3pv2jnb3ln86n6p8nkrif4ktjua6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.locatorchat",
+            "certificate_hash": "cb90b4f8f0335ba775116e67c76fa08843e81a47"
+          }
+        },
+        {
+          "client_id": "705967065138-v61hm2ffolejf25ljhcakcj7f87smrd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpCT31Tzf4XNTUa-UN_SjeVCDvMnPM5EU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705967065138-v61hm2ffolejf25ljhcakcj7f87smrd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
